@@ -1,0 +1,290 @@
+Strategy
+
+Low dimensional (5 instances)
+
+Large Scale (10 instances)
+
+
+File: 
+linha 1 Quant linhas e peso total
+linha n n-beneficio n-peso
+
+Part One - Low dimensional
+
+
+Instances: f1_l-d_kp_10_269, f3_l-d_kp_4_20, f5_l-d_kp_15_375, f7_l-d_kp_7_50, f10_l-d_kp_20_879
+
+
+**************Instance f1_l-d_kp_10_269
+optimun: 295
+==============Teste 1
+generations: 10000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+(Resultado: Sem convergencia aparente)
+
+
+
+
+==============Teste 2
+generations: 50000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+(Resultado: Converge e as gerações são excedentes)
+
+
+
+
+==============Teste 3
+generations: 25000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+(Resultado: Converge e as gerações são excedentes)
+
+
+
+
+==============Teste 4
+generations: 15000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+(Resultado: Converge)
+
+
+
+==============Teste 5
+generations: 5000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+(Resultado: Sem convergencia aparente)
+
+
+
+==============Teste 6
+generations: 15000
+temperature: 2000
+cutdown: 0,995
+mutation-prob: 0,01 
+(Resultado: Sem convergencia aparente)
+
+
+==============Teste 7
+generations: 15000
+temperature: 2500
+cutdown: 0,995
+mutation-prob: 0,01 
+(Resultado: Converge)
+
+
+==============Teste 8
+generations: 15000
+temperature: 2500
+cutdown: 0,999
+mutation-prob: 0,01 
+(Resultado: Converge)
+
+
+==============Teste 9
+generations: 10000
+temperature: 2500
+cutdown: 0,999
+mutation-prob: 0,01 
+(Resultado: Converge)
+
+
+
+==============Teste 9
+generations: 8000
+temperature: 2500
+cutdown: 0,999
+mutation-prob: 0,01 
+(Resultado: Converge)
+
+
+
+==============Teste 9
+generations: 8000
+temperature: 1500
+cutdown: 0,999
+mutation-prob: 0,01 
+(Resultado: NC)
+
+
+
+==============Teste 10
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  C
+
+
+
+
+==============Teste 11
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.9
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  NC
+
+
+==============Teste 12
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.95
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  NC
+
+
+
+
+==============Teste 13
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.995
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  NC
+
+
+==============Teste 14
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  C
+
+
+==============Teste 15
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+
+Resultado:  C
+
+
+
+==============Teste 16
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1500.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+
+Resultado:  C
+
+
+==============Teste 17
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1000.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+
+Resultado:  C
+
+
+
+==============Teste 18
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 900.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+Resultado:  C
+
+
+==============Teste 19
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+Resultado: GOOD
+
+
+
+
+**************Instance f5_l-d_kp_15_375
+optimun: 481.0694
+==============Teste 20
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+Resultado: GOOD
+
+
+
+
+**************Instance f8_l-d_kp_23_10000
+optimun: 9767
+==============Teste 21
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+Resultado: GOOD
+
+
+
+
+
+
+
+
+***************************** LARGE SCALE *****************************
+**************Instance knapPI_1_100_1000_1
+optimun: 9147
+==============Teste 22
+pop.subpop.0.species.genome-size	= 100
+eval.problem.instance 				= large-scale/knapPI_1_100_1000_1
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+
+Resultado NG
+
+
+
+
+=============Teste 23
+pop.subpop.0.species.genome-size	= 100
+eval.problem.instance 				= large-scale/knapPI_1_100_1000_1
+generations	= 20000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 500.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+
+Resutlado Converge mas repete
+
+
+==============Teste 24
+
+pop.subpop.0.species.genome-size	= 100
+eval.problem.instance 				= large-scale/knapPI_1_100_1000_1
+generations	= 20000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 10.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.01
+pop.subpop.0.species.mutation-type 						= flip
+
+

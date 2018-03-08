@@ -1,0 +1,410 @@
+Relatório Técnico
+
+Universidade Federal do Paraná – Curitiba – PR – Departamento de Informática
+Curso de Pós Graduação – Doutorado
+Disciplina: Computação Bio-Inspirada
+
+Aluno: Dimmy Karson Soares Magalhães
+
+* Resumo
+
+Este relatório apresenta as observações sobre o algoritmo Simulated Annealing sob a ótica do problema da Mochila. Utilizando o ECJ Framework como ferramenta, objetivo é analisar resultados encontrados do experimento de modificar parâmetros de entrada do algoritmo em contraponto a configurações de mochila apresentados.
+
+* Introdução
+
+Baseado na metaheurística Simulated Annealing foi proposto o uso do ECJ Framework para realizar testes de comportamento e convergência em relação ao problema da mochila, para tanto foi utilizado o próprio algoritmo do ECJ, uma implementação do problema da mochila e configuraçõe de mochilas e seus respectivos ótimos, isto é, dada uma configuração de mochila qual seria a configuração ideal de itens contidos em tal mochila dado seu custo/benefício para o problema. Dentre as configurações de mochila existem dois grandes grupos, os quais se destaca: Problemas de Pequena Dimensão e Problemas de Grande Escala.
+
+Os problemas de pequena dimensão ditam configurações com poucos itens, o que não invalida que custos e benefícios fossem de distintos valores, destaca-se que a quantidade de itens a serem avaliados variam entre 10 e 23 itens. O problemas de grande escala destaca-se que existiam configurações entre 100 e 10000 itens. com custos e benefícios variados.
+
+* Metodologia
+
+Para realizar o experimento, selecionou-se dentre os problemas de pequena dimensão 3 representativos do problema para se realizados testes e para os problemas de larga escala, selecionou-se 3 configurações representativas. O teste consistiu em modificar os parâmetros de entrada do algoritmo para se inferir comportamento da metaherísticas paras diferentes configurações apresentadas.
+
+Entre os parâmetros modificadas destacam-se com relevância:
+
+Gerações, representado pela chave: generations;
+Temperatura,representado pela chave: pop.subpop.0.species.pipe.stub-source.temperature;
+Decaimento, representado pela chave: pop.subpop.0.species.pipe.stub-source.cutdown;
+Taxa de mutação, pop.subpop.0.species.mutation-prob;
+Tipo de mutação, pop.subpop.0.species.mutation-type.
+
+
+* Experimento
+
+Para proceder o experimento, foi selecionada uma das configurações de pequena dimensão e iniciou-se o procedimento de mudança dos parâmetros. Para tanto, foi selecionada a configuração: Instance f1_l-d_kp_10_269 cujo ótimo conhecido é de 295. Seguidas experiências empíricas foram realizadas sobre a instância, permutando valores e analisando comportamento. Ao se encontrar, na média uma configuração satisfatória para as divergentes "seeds" do problema adotou-se tal configuração como base para o experimento das demais instâncias, sejam elas de pequena dimensão ou larga escala.
+
+
+* Resultados
+
+A seguir as configurações testadas para o problema de pequena dimensão:
+
+==============Teste 1
+generations: 10000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+
+Resultado: Sem convergência aparente
+
+
+
+==============Teste 2
+generations: 50000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+
+Resultado: Sem convergência aparente
+
+
+
+==============Teste 3
+generations: 25000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+
+Resultado: Sem convergência aparente
+
+
+
+
+==============Teste 4
+generations: 15000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+
+Resultado: Sem convergência aparente
+
+
+
+==============Teste 5
+generations: 5000
+temperature: 3000
+cutdown: 0,995
+mutation-prob: 0,01 
+
+Resultado: Sem convergência aparente
+
+
+==============Teste 6
+generations: 15000
+temperature: 2000
+cutdown: 0,995
+mutation-prob: 0,01 
+
+
+Resultado: Sem convergência aparente
+
+
+==============Teste 7
+generations: 15000
+temperature: 2500
+cutdown: 0,995
+mutation-prob: 0,01
+
+Resultado:  Convergiu satisfatoriamente, mas ainda com estagnação nas últimas gerações
+
+
+==============Teste 8
+generations: 15000
+temperature: 2500
+cutdown: 0,999
+mutation-prob: 0,01 
+
+Resultado:  Convergiu satisfatoriamente, mas ainda com estagnação nas últimas gerações
+
+
+==============Teste 9
+generations: 10000
+temperature: 2500
+cutdown: 0,999
+mutation-prob: 0,01 
+
+Resultado:  Não convergiu satisfatoriamente
+
+
+
+==============Teste 9
+generations: 8000
+temperature: 2500
+cutdown: 0,999
+mutation-prob: 0,01 
+
+Resultado:  Não convergiu satisfatoriamente
+
+
+
+==============Teste 9
+generations: 8000
+temperature: 1500
+cutdown: 0,999
+mutation-prob: 0,01 
+
+Resultado:  Não convergiu satisfatoriamente
+
+
+
+==============Teste 10
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  Não convergiu satisfatoriamente
+
+
+
+
+==============Teste 11
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.9
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  Não convergiu satisfatoriamente
+
+
+==============Teste 12
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.95
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  Não convergiu satisfatoriamente
+
+
+
+==============Teste 13
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.995
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  Não convergiu satisfatoriamente
+
+
+==============Teste 14
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.01
+
+Resultado:  Convergiu satisfatoriamente, mas ainda com estagnação nas últimas gerações
+
+
+==============Teste 15
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1800.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+
+Resultado:  Convergiu satisfatoriamente, mas ainda com estagnação nas últimas gerações
+
+
+
+==============Teste 16
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1500.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+
+Resultado:  Convergiu satisfatoriamente, mas ainda com estagnação nas últimas gerações
+
+==============Teste 17
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 1000.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+
+Resultado:  Convergiu satisfatoriamente, mas ainda com estagnação nas últimas gerações
+
+
+==============Teste 18
+generations	= 8000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 900.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+
+Resultado:  Convergiu satisfatoriamente, mas ainda com estagnação nas últimas gerações
+
+==============Teste 19
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+Resultado:  Convergiu satisfatoriamente
+
+
+
+Baseado no resultado do Teste 19, as outras instâncias começaram a serem testadas, sejam elas pequenas ou grandes, os experimentos são mostrados a seguir:
+
+
+************** Instance f5_l-d_kp_15_375
+optimun: 481.0694
+==============Teste 20
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+Resultado:  Convergiu satisfatoriamente
+
+
+
+************** Instance f8_l-d_kp_23_10000
+optimun: 9767
+==============Teste 21
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+Resultado:  Convergiu satisfatoriamente
+
+
+
+
+Dados os problemas analisados, passou-se então ao experimento dos problemas de larga escala, os experimentos são mostrados a seguir:
+
+**************Instance knapPI_1_100_1000_1
+optimun: 9147
+==============Teste 22
+pop.subpop.0.species.genome-size	= 100
+eval.problem.instance 				= large-scale/knapPI_1_100_1000_1
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+
+Resultado: Não convergiu satisfatoriamente
+
+
+
+=============Teste 23
+pop.subpop.0.species.genome-size	= 100
+eval.problem.instance 				= large-scale/knapPI_1_100_1000_1
+generations	= 20000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 500.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+
+Resultado: Convergiu entretando estagna
+
+
+==============Teste 24
+
+pop.subpop.0.species.genome-size	= 100
+eval.problem.instance 				= large-scale/knapPI_1_100_1000_1
+generations	= 20000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 10.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.01
+pop.subpop.0.species.mutation-type 						= flip
+
+Resultado: Convergiu entretando estagna
+
+
+
+
+**************Instance knapPI_2_5000_1000_1
+optimun: 9147
+==============Teste 25
+pop.subpop.0.species.genome-size	= 5000
+eval.problem.instance 				= large-scale/knapPI_2_5000_1000_1
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+
+Resultado: Não convergiu satisfatoriamente
+
+
+
+=============Teste 26
+pop.subpop.0.species.genome-size	= 5000
+eval.problem.instance 				= large-scale/knapPI_2_5000_1000_1
+generations	= 20000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 500.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+
+Resultado: Convergiu entretando estagna
+
+
+==============Teste 27
+
+pop.subpop.0.species.genome-size	= 5000
+eval.problem.instance 				= large-scale/knapPI_2_5000_1000_1
+generations	= 20000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 10.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.01
+pop.subpop.0.species.mutation-type 						= flip
+
+Resultado: Convergiu entretando estagna
+
+
+
+
+
+**************Instance knapPI_2_10000_1000_1
+optimun: 9147
+==============Teste 28
+pop.subpop.0.species.genome-size	= 10000
+eval.problem.instance 				= large-scale/knapPI_2_10000_1000_1
+generations	= 3500
+pop.subpop.0.species.pipe.stub-source.temperature 		= 5.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+
+Resultado: Não convergiu satisfatoriamente
+
+
+
+=============Teste 29
+pop.subpop.0.species.genome-size	= 10000
+eval.problem.instance 				= large-scale/knapPI_2_10000_1000_1
+generations	= 20000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 500.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.03
+pop.subpop.0.species.mutation-type 						= flip
+
+
+Resultado: Convergiu entretando estagna
+
+
+==============Teste 30
+
+pop.subpop.0.species.genome-size	= 10000
+eval.problem.instance 				= large-scale/knapPI_2_10000_1000_1
+generations	= 20000
+pop.subpop.0.species.pipe.stub-source.temperature 		= 10.0
+pop.subpop.0.species.pipe.stub-source.cutdown 			= 0.999
+pop.subpop.0.species.mutation-prob 						= 0.01
+pop.subpop.0.species.mutation-type 						= flip
+
+Resultado: Convergiu entretando estagna
+
+
+
+
+
+
+
